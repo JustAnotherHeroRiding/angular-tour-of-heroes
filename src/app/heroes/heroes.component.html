@@ -1,0 +1,15 @@
+<h2>
+  Heroes
+</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <hero
+      [hero]="hero"
+      [selected]="selectedHero === hero"
+      (onHeroSelect)="selectHero($event)"
+    ></hero>
+  </li>
+</ul>
+<hero-details [hero]="selectedHero">
+  <span #title>Details</span>
+</hero-details>

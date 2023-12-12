@@ -1,0 +1,26 @@
+.hero {
+  border: 1px solid black;
+  padding: 5px;
+  width: 200px;
+  margin: 2px 0;
+  display: flex;
+  justify-content: start;
+  gap: 1em;
+  border-radius: 5px;
+}
+
+.hero:hover {
+  transform: scale(1.05);
+  /*background-color: #fafad9;*/
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #f65532;
+  color: white;
+}
+
+.selected .badge {
+  color: white;
+}
+

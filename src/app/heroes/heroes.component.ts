@@ -3,6 +3,7 @@ import {Hero} from '../hero';
 import {HEROES} from '../mock-heroes';
 import {HeroesService} from '../services/heroes/heroes.service';
 import {ActivatedRoute, Router} from '@angular/router';
+import {WeatherService} from '../news/services/weather.service';
 
 @Component({
   selector: 'heroes',
@@ -18,6 +19,7 @@ export class HeroesComponent {
     private _heroesService: HeroesService,
     private _router: Router,
     private _route: ActivatedRoute,
+    private _newsService: WeatherService
   ) {
     this.heroes = _heroesService.findAllHeroes();
   }

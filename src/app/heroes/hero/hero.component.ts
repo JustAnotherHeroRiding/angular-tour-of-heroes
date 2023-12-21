@@ -1,4 +1,13 @@
-import {Component, EventEmitter, Input, Output, ViewEncapsulation} from '@angular/core';
+import {
+  AfterContentInit, AfterViewInit,
+  Component,
+  ContentChild,
+  ElementRef,
+  EventEmitter,
+  Input,
+  Output,
+  ViewEncapsulation
+} from '@angular/core';
 import {Hero} from '../../hero';
 import {HeroesService} from '../../services/heroes/heroes.service';
 

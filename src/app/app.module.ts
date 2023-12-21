@@ -9,6 +9,8 @@ import {HeroComponent} from './heroes/hero/hero.component';
 import {HeroDetailsComponent} from './heroes/hero-details/hero-details.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
+import {HttpClientModule} from '@angular/common/http';
+import {AsyncPipe, CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,15 @@ import { HomeComponent } from './home/home.component';
     HeroDetailsComponent,
     NavBarComponent,
     HomeComponent,
+
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
+    AsyncPipe,
   ],
   providers: [
   ],

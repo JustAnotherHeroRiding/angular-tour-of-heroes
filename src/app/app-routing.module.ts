@@ -15,10 +15,12 @@ const routes: Routes = [
         component: HeroDetailsComponent
       }
     ]
+  }, {
+    path: 'news', loadChildren: () => import('./news/weather.module').then(m => m.WeatherModule)
   },
-  // {
-  //   path: '**', redirectTo: 'home', pathMatch: 'full'
-  // }
+  {
+    path: '**', redirectTo: 'home', pathMatch: 'full'
+  }
 ]
 
 @NgModule({
